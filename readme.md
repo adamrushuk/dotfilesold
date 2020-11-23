@@ -28,7 +28,7 @@ This shell configuration is unlikely to be to everyone's tastes 😁
 Clone into `~/dotfiles`
 ```bash
 cd ~
-git clone https://github.com/benc-uk/dotfiles.git 
+git clone https://github.com/adamrushuk/dotfiles.git
 ```
 
 Run install
