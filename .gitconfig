@@ -11,8 +11,8 @@
 	editor = code --wait
 [init]
 	defaultBranch = main
-[http]
-	cookiefile = /home/adamr/.gitcookies
+# [http]
+# 	cookiefile = /home/adamr/.gitcookies
 [alias]
 	c = "!git add -A && git commit -m "
 	new = "!git checkout -b"
