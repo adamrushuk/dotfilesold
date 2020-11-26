@@ -32,10 +32,10 @@ fi
 #
 if [ -f "/bin/zsh" ]; then
   echo -e "\e[38;5;45m»»» Zsh detected, setting up oh-my-zsh and powerlevel10k \e[0m"
-  rm -rf $HOME/.oh-my-zsh
+  rm -rf "$HOME/.oh-my-zsh"
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/.oh-my-zsh/custom/themes/powerlevel10k
-  touch $HOME/.z
+  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "$HOME/.oh-my-zsh/custom/themes/powerlevel10k"
+  touch "$HOME/.z"
 fi
 
 #
@@ -45,18 +45,16 @@ echo -e "\n\e[38;5;45m»»» Creating dotfile symlinks \e[0m"
 for f in .zshrc .p10k.zsh .gitconfig .profile .bashrc .aliases.rc .banner.rc bin
 do
   echo $f
-  rm -rf $HOME/$f
-  ln -s $HOME/dotfiles/$f $HOME/$f
+  rm -rf "${HOME:?}/$f"
+  ln -s "$HOME/dotfiles/$f" "$HOME/$f"
 done
-rm $HOME/.bashenv $HOME/.zshenv
-ln -s $HOME/dotfiles/.env.rc $HOME/.bashenv
-ln -s $HOME/dotfiles/.env.rc $HOME/.zshenv
+rm "$HOME/.bashenv" "$HOME/.zshenv"
+ln -s "$HOME/dotfiles/.env.rc" "$HOME/.bashenv"
+ln -s "$HOME/dotfiles/.env.rc" "$HOME/.zshenv"
 
 #
 # Clone my setup scripts
 #
 echo -e "\n\e[38;5;45m»»» Cloning tools repo to $HOME/tools \e[0m"
-rm -rf $HOME/tools
-
-# TODO: add my own tools repo
-git clone -q https://github.com/benc-uk/tools-install.git $HOME/tools
+rm -rf "$HOME/tools"
+git clone -q git@github.com:adamrushuk/tools-install.git "$HOME/tools"
