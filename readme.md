@@ -39,19 +39,42 @@ Follow the steps below to configure dotfiles on a fresh Linux system:
 
     ```bash
     cat ~/.ssh/id_rsa.pub
+
+    # use clip if using WSL
+    cat ~/.ssh/id_rsa.pub | clip.exe
+    ```
+
+1. Test connection to GitHub:
+
+    ```bash
+    ssh -T git@github.com
     ```
 
 1. Clone into `~/dotfiles`:
 
     ```bash
     cd ~
-    git clone https://github.com/adamrushuk/dotfiles.git
+    ll
+    # git clone https://github.com/adamrushuk/dotfiles.git
+    git clone git@github.com:adamrushuk/dotfiles.git
     ```
 
-1. Run the install script:
+1. Run the install scripts:
 
     ```bash
+    ~/dotfiles/install-zsh.sh
     ~/dotfiles/install.sh
     ```
 
 1. Place any secrets, and local overrides into `~/.local.rc` **DO NOT** add this file to the dotfiles repo.
+
+1. This [tools-install repo](https://github.com/adamrushuk/tools-install) is also cloned so common tools can be
+   installed as required, eg:
+
+    ```bash
+    ~/tools/azure-cli.sh
+    ~/tools/kubectl.sh
+    ~/tools/kube-tools.sh
+    ~/tools/misc.sh
+    ~/tools/powershell.sh
+    ```
