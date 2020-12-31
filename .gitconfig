@@ -1,5 +1,5 @@
-# [credential]
-	# helper = /mnt/c/Tools/gcmw-v1.20.0/git-credential-manager.exe
+[credential]
+	helper = /mnt/c/Program\\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe
 [user]
 	email = adamrushuk@gmail.com
 	name = Adam Rush
