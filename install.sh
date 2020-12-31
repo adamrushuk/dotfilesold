@@ -57,4 +57,4 @@ ln -s "$HOME/dotfiles/.env.rc" "$HOME/.zshenv"
 #
 echo -e "\n\e[38;5;45m»»» Cloning tools repo to $HOME/tools \e[0m"
 rm -rf "$HOME/tools"
-git clone -q git@github.com:adamrushuk/tools-install.git "$HOME/tools"
+git clone -q https://github.com/adamrushuk/tools-install.git "$HOME/tools"
