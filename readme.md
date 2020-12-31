@@ -29,34 +29,11 @@ This shell configuration is unlikely to be to everyone's tastes 😁
 
 Follow the steps below to configure dotfiles on a fresh Linux system:
 
-1. Create a new SSH key, eg:
-
-    ```bash
-    ssh-keygen -f ~/.ssh/id_rsa -t rsa -N '' -b 4096 -C "adamrushuk@ubuntu2004"
-    ```
-
-1. Copy your public key to [GitHub](https://github.com/settings/keys):
-
-    ```bash
-    cat ~/.ssh/id_rsa.pub
-
-    # use clip if using WSL
-    cat ~/.ssh/id_rsa.pub | clip.exe
-    ```
-
-1. Test connection to GitHub:
-
-    ```bash
-    ssh -T git@github.com
-    ```
-
 1. Clone into `~/dotfiles`:
 
     ```bash
     cd ~
-    ll
-    # git clone https://github.com/adamrushuk/dotfiles.git
-    git clone git@github.com:adamrushuk/dotfiles.git
+    git clone https://github.com/adamrushuk/dotfiles.git
     ```
 
 1. Run the install scripts:
@@ -77,4 +54,5 @@ Follow the steps below to configure dotfiles on a fresh Linux system:
     ~/tools/kube-tools.sh
     ~/tools/misc.sh
     ~/tools/powershell.sh
+    ~/tools/velero.sh
     ```
