@@ -2,6 +2,15 @@
 alias aks-dash='az aks browse -n rush -g aks'
 alias k='kubectl'
 alias kn='kubectl config set-context --current --namespace '
+alias ksn='_f(){k get namespace $1 > /dev/null; if [ $? -eq 1 ]; then return $?; fi;  k config set-context $(k config current-context) --namespace=$1; echo "Namespace: $1"};_f'
+alias kcc='kubectl config current-context'
+alias kdp='kubectl delete po'
+alias kgc='kubectl config get-contexts'
+alias kge='kubectl get events --sort-by='\''{.lastTimestamp}'\'
+alias kgp='kubectl get po'
+alias kl='kubectl logs '
+alias kpf='kubectl port-forward'
+alias ksc='kubectl config use-context'
 
 # Misc
 alias wsl-ip="ip addr show eth0 | grep \"inet 1\" | awk '{print \$2}' | cut -d/ -f1"
@@ -12,6 +21,7 @@ alias py3='python3'
 alias tf='terraform'
 alias g='git'
 alias timesync='sudo hwclock -s'
+alias ddu='du -sh * | sort -hr | head -20'
 
 # Azure CLI
 alias az-airs='az account set -s $AZ_SUB_AIRS && az account show -o table'
