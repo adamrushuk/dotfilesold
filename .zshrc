@@ -8,7 +8,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-# Set name of the theme to load 
+# Set name of the theme to load
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
@@ -43,6 +43,9 @@ export LS_COLORS
 
 # Extra aliases ======================
 if [ -f $HOME/.aliases.rc ]; then source $HOME/.aliases.rc; fi
+
+# Not required, as ".zshenv" autoloads
+# if [ -f $HOME/.zshenv ]; then source $HOME/.zshenv; fi
 
 # Auto complete ====================
 if command -v kubectl > /dev/null; then source <(kubectl completion zsh); fi
