@@ -57,6 +57,9 @@ if [ -f $HOME/.banner.rc ]; then source $HOME/.banner.rc; fi
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# oh-my-posh custom prompt
+if [ -f $HOME/.go-my-posh.json ]; then eval "$(oh-my-posh --init --shell zsh --config ~/.go-my-posh.json)"; fi
+
 # Local overrides, secrets and post steps ==============
 if [ -f $HOME/.local.rc ]; then source $HOME/.local.rc; fi
 

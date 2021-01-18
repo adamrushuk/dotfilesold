@@ -28,6 +28,13 @@ if [[ "$PROMPT" == "1" ]]; then
 fi
 
 #
+# Install oh-my-posh
+#
+mkdir -p ~/.local/bin
+wget https://github.com/JanDeDobbeleer/oh-my-posh3/releases/latest/download/posh-linux-amd64 -O ~/.local/bin/oh-my-posh
+chmod +x ~/.local/bin/oh-my-posh
+
+#
 # Enable oh-my-zsh and p10k
 #
 if [ -f "/bin/zsh" ]; then
@@ -42,7 +49,7 @@ fi
 # Create symlinks for all dotfiles and bin directory
 #
 echo -e "\n\e[38;5;45m»»» Creating dotfile symlinks \e[0m"
-for f in .zshrc .p10k.zsh .gitconfig .profile .bashrc .aliases.rc .banner.rc bin
+for f in .zshrc .p10k.zsh .gitconfig .profile .bashrc .aliases.rc .banner.rc bin .go-my-posh.json
 do
   echo $f
   rm -rf "${HOME:?}/$f"

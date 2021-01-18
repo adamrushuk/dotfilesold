@@ -140,5 +140,8 @@ if [[ $BASIC_PROMPT != 1 ]]; then
   if [ -f $HOME/dotfiles/.bashprompt.rc ]; then source $HOME/dotfiles/.bashprompt.rc; fi
 fi
 
+# oh-my-posh custom prompt
+if [ -f $HOME/.go-my-posh.json ]; then eval "$(oh-my-posh --init --shell bash --config ~/.go-my-posh.json)"; fi
+
 # Local overrides and post steps
 if [ -f $HOME/.local.rc ]; then source $HOME/.local.rc; fi

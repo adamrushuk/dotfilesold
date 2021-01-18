@@ -39,7 +39,10 @@ Follow the steps below to configure dotfiles on a fresh Linux system:
 1. Run the install scripts:
 
     ```bash
+    # [OPTIONAL] install zsh
     ~/dotfiles/install-zsh.sh
+    
+    # main install
     ~/dotfiles/install.sh
     ```
 
