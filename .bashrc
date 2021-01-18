@@ -135,10 +135,10 @@ if command -v az > /dev/null; then source /etc/bash_completion.d/azure-cli; fi
 # Login banner thing
 if [ -f $HOME/.banner.rc ]; then source $HOME/.banner.rc; fi
 
-if [[ $BASIC_PROMPT != 1 ]]; then
-  # Fancy powerlevel like prompt, remove if you don't like it, or is slow
-  if [ -f $HOME/dotfiles/.bashprompt.rc ]; then source $HOME/dotfiles/.bashprompt.rc; fi
-fi
+# if [[ $BASIC_PROMPT != 1 ]]; then
+#   # Fancy powerlevel like prompt, remove if you don't like it, or is slow
+#   if [ -f $HOME/dotfiles/.bashprompt.rc ]; then source $HOME/dotfiles/.bashprompt.rc; fi
+# fi
 
 # oh-my-posh custom prompt
 if [ -f $HOME/.go-my-posh.json ]; then eval "$(oh-my-posh --init --shell bash --config ~/.go-my-posh.json)"; fi
