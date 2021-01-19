@@ -47,7 +47,7 @@ Follow the steps below to configure dotfiles on a fresh Linux system:
     ```
 
 1. Place any secrets, and local overrides into `~/.local.rc` **DO NOT** add this file to the dotfiles repo.
-
+1. Restart the shell session.
 1. This [tools-install repo](https://github.com/adamrushuk/tools-install) is also cloned so common tools can be
    installed as required, eg:
 

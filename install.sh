@@ -20,7 +20,7 @@ if [[ $CODESPACES ]]; then
 fi
 
 if [[ "$PROMPT" == "1" ]]; then
-  read -p "Are you sure? " -n 1 -r
+  read -p "Are you sure? (y/n)" -n 1 -r
   echo
   if [[ ! $REPLY =~ ^[Yy]$ ]]; then
       [[ "$0" = "$BASH_SOURCE" ]] && echo -e "\e[38;5;63m»»» 😇 OK, exiting without making changes, bye!\n\e[0m" && exit 1 || return 1
