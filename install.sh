@@ -31,7 +31,7 @@ fi
 # Install oh-my-posh
 #
 mkdir -p ~/.local/bin
-wget https://github.com/JanDeDobbeleer/oh-my-posh3/releases/latest/download/posh-linux-amd64 -O ~/.local/bin/oh-my-posh
+wget -q https://github.com/JanDeDobbeleer/oh-my-posh3/releases/latest/download/posh-linux-amd64 -O ~/.local/bin/oh-my-posh
 chmod +x ~/.local/bin/oh-my-posh
 
 #
