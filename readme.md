@@ -54,8 +54,8 @@ Follow the steps below to configure dotfiles on a fresh Linux system:
     ```bash
     ~/tools/azure-cli.sh
     ~/tools/helm.sh
-    ~/tools/kube-tools.sh
     ~/tools/kubectl.sh
+    ~/tools/kube-tools.sh
     ~/tools/misc.sh
     ~/tools/powershell.sh
     ~/tools/terraform.sh
