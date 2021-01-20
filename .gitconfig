@@ -1,4 +1,5 @@
 [credential]
+	# use windows credential manager
 	helper = /mnt/c/Program\\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe
 [user]
 	email = adamrushuk@gmail.com
