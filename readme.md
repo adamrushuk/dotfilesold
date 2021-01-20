@@ -52,6 +52,10 @@ Follow the steps below to configure dotfiles on a fresh Linux system:
    installed as required, eg:
 
     ```bash
+    # installs all common tools
+    ~/tools/install-common.sh
+    
+    # install tools individually
     ~/tools/azure-cli.sh
     ~/tools/helm.sh
     ~/tools/kubectl.sh
