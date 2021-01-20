@@ -30,6 +30,7 @@ fi
 #
 # Install oh-my-posh
 #
+echo -e "\n\e[38;5;45m»»» Installing oh-my-posh (custom prompt)... \e[0m"
 mkdir -p ~/.local/bin
 wget -q https://github.com/JanDeDobbeleer/oh-my-posh3/releases/latest/download/posh-linux-amd64 -O ~/.local/bin/oh-my-posh
 chmod +x ~/.local/bin/oh-my-posh
