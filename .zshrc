@@ -19,6 +19,7 @@ COMPLETION_WAITING_DOTS="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Ohmyzsh plugins
+# https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins
 plugins=(
   git
   dotenv
