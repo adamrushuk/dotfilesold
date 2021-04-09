@@ -56,9 +56,15 @@ do
   rm -rf "${HOME:?}/$f"
   ln -s "$HOME/dotfiles/$f" "$HOME/$f"
 done
+
+# env
 rm "$HOME/.bashenv" "$HOME/.zshenv"
 ln -s "$HOME/dotfiles/.env.rc" "$HOME/.bashenv"
 ln -s "$HOME/dotfiles/.env.rc" "$HOME/.zshenv"
+
+# powershell
+mkdir -p "$HOME/.config/powershell/"
+ln -s "$HOME/dotfiles/profile.ps1" "$HOME/.config/powershell/profile.ps1"
 
 #
 # Clone my setup scripts
