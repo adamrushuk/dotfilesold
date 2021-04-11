@@ -21,6 +21,44 @@
                     "properties": null
                 },
                 {
+                    "type": "kubectl",
+                    "style": "powerline",
+                    "powerline_symbol": "\uE0B0",
+                    "foreground": "#000000",
+                    "background": "#ebcc34",
+                    "properties": {
+                        "prefix": " \uFD31 "
+                    }
+                },
+                {
+                    "type": "az",
+                    "style": "powerline",
+                    "powerline_symbol": "\uE0B0",
+                    "foreground": "#000000",
+                    "background": "#9ec3f0",
+                    "properties": {
+                        "display_id": false,
+                        "display_name": true,
+                        "info_separator": " @ ",
+                        "prefix": " \uFD03 "
+                    }
+                }
+            ]
+        },
+        {
+            "type": "newline",
+            "alignment": "",
+            "horizontal_offset": 0,
+            "vertical_offset": 0,
+            "segments": null
+        },
+        {
+            "type": "prompt",
+            "alignment": "left",
+            "horizontal_offset": 0,
+            "vertical_offset": 0,
+            "segments": [
+                {
                     "type": "session",
                     "style": "powerline",
                     "powerline_symbol": "",
@@ -56,29 +94,6 @@
                     "leading_diamond": "",
                     "trailing_diamond": "",
                     "properties": null
-                },
-                {
-                    "type": "az",
-                    "style": "powerline",
-                    "powerline_symbol": "\uE0B0",
-                    "foreground": "#000000",
-                    "background": "#9ec3f0",
-                    "properties": {
-                        "display_id": false,
-                        "display_name": true,
-                        "info_separator": " @ ",
-                        "prefix": " \uFD03 "
-                    }
-                },
-                {
-                    "type": "kubectl",
-                    "style": "powerline",
-                    "powerline_symbol": "\uE0B0",
-                    "foreground": "#000000",
-                    "background": "#ebcc34",
-                    "properties": {
-                        "prefix": " \uFD31 "
-                    }
                 },
                 {
                     "type": "exit",
