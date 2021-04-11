@@ -1,43 +1,46 @@
 {
-    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
     "final_space": false,
-    "console_title": true,
-    "console_title_style": "template",
-    "console_title_template": "{{if .Root}}root :: {{end}}{{.Shell}} :: {{.Folder}}",
+    "console_title": false,
+    "console_title_style": "",
     "blocks": [
         {
             "type": "prompt",
-            "alignment": "right",
+            "alignment": "left",
             "horizontal_offset": 0,
             "vertical_offset": 0,
             "segments": [
                 {
+                    "type": "root",
+                    "style": "powerline",
+                    "powerline_symbol": "",
+                    "invert_powerline": false,
+                    "foreground": "#100e23",
+                    "background": "#ffe9aa",
+                    "leading_diamond": "",
+                    "trailing_diamond": "",
+                    "properties": null
+                },
+                {
                     "type": "kubectl",
-                    "style": "plain",
+                    "style": "powerline",
                     "powerline_symbol": "\uE0B0",
-                    "foreground": "#808080",
+                    "foreground": "#000000",
+                    "background": "#ebcc34",
                     "properties": {
                         "prefix": " \uFD31 "
                     }
                 },
                 {
                     "type": "az",
-                    "style": "plain",
+                    "style": "powerline",
                     "powerline_symbol": "\uE0B0",
-                    "foreground": "#007ACC",
+                    "foreground": "#000000",
+                    "background": "#9ec3f0",
                     "properties": {
                         "display_id": false,
                         "display_name": true,
                         "info_separator": " @ ",
                         "prefix": " \uFD03 "
-                    }
-                },
-                {
-                    "type": "time",
-                    "style": "plain",
-                    "foreground": "#808080",
-                    "properties": {
-                        "time_format": "15:04:05"
                     }
                 }
             ]
@@ -57,30 +60,50 @@
             "segments": [
                 {
                     "type": "session",
-                    "style": "plain",
-                    "foreground": "#808080",
+                    "style": "powerline",
+                    "powerline_symbol": "",
+                    "invert_powerline": false,
+                    "foreground": "#100e23",
+                    "background": "#ffffff",
+                    "leading_diamond": "",
+                    "trailing_diamond": "",
                     "properties": null
                 },
                 {
                     "type": "path",
-                    "style": "plain",
-                    "foreground": "#007ACC",
+                    "style": "powerline",
+                    "powerline_symbol": "",
+                    "invert_powerline": false,
+                    "foreground": "#100e23",
+                    "background": "#91ddff",
+                    "leading_diamond": "",
+                    "trailing_diamond": "",
                     "properties": {
                         "folder_icon": "",
-                        "folder_separator_icon": "/",
+                        "folder_separator_icon": "",
                         "style": "short"
                     }
                 },
                 {
                     "type": "git",
-                    "style": "plain",
-                    "foreground": "#808080",
+                    "style": "powerline",
+                    "powerline_symbol": "",
+                    "invert_powerline": false,
+                    "foreground": "#193549",
+                    "background": "#95ffa4",
+                    "leading_diamond": "",
+                    "trailing_diamond": "",
                     "properties": null
                 },
                 {
                     "type": "exit",
-                    "style": "plain",
-                    "foreground": "#fff",
+                    "style": "powerline",
+                    "powerline_symbol": "",
+                    "invert_powerline": false,
+                    "foreground": "#ffffff",
+                    "background": "#ff8080",
+                    "leading_diamond": "",
+                    "trailing_diamond": "",
                     "properties": {
                         "prefix": " "
                     }
@@ -104,8 +127,11 @@
                     "type": "text",
                     "style": "plain",
                     "powerline_symbol": "",
+                    "invert_powerline": false,
                     "foreground": "#007ACC",
                     "background": "",
+                    "leading_diamond": "",
+                    "trailing_diamond": "",
                     "properties": {
                         "prefix": "",
                         "text": "❯"
