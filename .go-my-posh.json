@@ -6,8 +6,11 @@
     "console_title_template": "{{if .Root}}root :: {{end}}{{.Shell}} :: {{.Folder}}",
     "blocks": [
         {
+            "type": "newline"
+        },
+        {
             "type": "prompt",
-            "alignment": "right",
+            "alignment": "left",
             "horizontal_offset": 0,
             "vertical_offset": 0,
             "segments": [
@@ -15,7 +18,7 @@
                     "type": "kubectl",
                     "style": "plain",
                     "powerline_symbol": "\uE0B0",
-                    "foreground": "#808080",
+                    "foreground": "#2E2E2E",
                     "properties": {
                         "prefix": " \uFD31 "
                     }
@@ -24,7 +27,7 @@
                     "type": "az",
                     "style": "plain",
                     "powerline_symbol": "\uE0B0",
-                    "foreground": "#007ACC",
+                    "foreground": "#2E2E2E",
                     "properties": {
                         "display_id": false,
                         "display_name": true,
@@ -35,7 +38,7 @@
                 {
                     "type": "time",
                     "style": "plain",
-                    "foreground": "#808080",
+                    "foreground": "#2E2E2E",
                     "properties": {
                         "time_format": "15:04:05"
                     }
