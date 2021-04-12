@@ -80,7 +80,7 @@
                 {
                     "type": "exit",
                     "style": "plain",
-                    "foreground": "#ff0000",
+                    "foreground": "#BC414C",
                     "properties": {
                         "prefix": " "
                     }
