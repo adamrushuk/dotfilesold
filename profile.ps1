@@ -64,17 +64,17 @@ function Clear-DeletedBranches {
     Write-Host "Switching to branch [$defaultBranch]..." -ForegroundColor Yellow
     git checkout $defaultBranch
 
-    $before = git branch -a
+    $branchesBefore = git branch -a
 
-    $prun = git remote prune origin --dry-run
-    if ($prun) {
+    $branchesToPrune = git remote prune origin --dry-run
+    if ($branchesToPrune) {
         Write-Host "Branches to Be Pruned..." -ForegroundColor Green
-        Write-Host $prun -ForegroundColor Red
+        Write-Host $branchesToPrune -ForegroundColor Red
 
         if ($PSCmdlet.ShouldProcess("Remove Local Branches?")) {
             git remote prune origin
-            $after = git branch -a
-            $removed = Compare-Object -ReferenceObject $before -DifferenceObject $after
+            $branchesAfter = git branch -a
+            $removed = Compare-Object -ReferenceObject $branchesBefore -DifferenceObject $branchesAfter
             foreach ($b in $removed.InputObject) {
                 $localName = $b.Split('/')[-1]
                 git branch -D $localName
