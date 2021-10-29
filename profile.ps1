@@ -35,6 +35,9 @@ Get-PSReadLineKeyHandler
 # Enable history suggestions
 Set-PSReadLineOption -PredictionSource History
 
+# Clear history
+# Get-PSReadlineOption | Select-Object -ExpandProperty HistorySavePath | Remove-Item -WhatIf
+
 # Searching for commands with up/down arrow is really handy.  The
 # option "moves to end" is useful if you want the cursor at the end
 # of the line while cycling through history like it does w/o searching,

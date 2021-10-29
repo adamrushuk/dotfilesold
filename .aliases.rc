@@ -30,6 +30,7 @@ alias az-vs='az account set -s $AZ_SUB_VS && az account show -o table'
 alias az-bs='az account set -s TODO'
 alias azh='source /mnt/c/Users/adamr/.azhome.sh'
 alias azd='source /mnt/c/Users/adamr/.azdev.sh'
+alias azm='source ~/.azmgt.sh'
 
 # Node
 alias npm-clean='rm -rf node_modules && rm package-lock.json && npm install'
