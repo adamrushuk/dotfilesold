@@ -5,7 +5,6 @@
 	"recommendations": [
 		"aaron-bond.better-comments",
 		"bierner.markdown-preview-github-styles",
-		"coenraads.bracket-pair-colorizer-2",
 		"davidanson.vscode-markdownlint",
 		"eamodio.gitlens",
 		"foxundermoon.shell-format",
