@@ -2,7 +2,6 @@
 alias aks-dash='az aks browse -n rush -g aks'
 alias k='kubectl'
 alias kn='kubectl config set-context --current --namespace '
-alias ksn='_f(){k get namespace $1 > /dev/null; if [ $? -eq 1 ]; then return $?; fi;  k config set-context $(k config current-context) --namespace=$1; echo "Namespace: $1"};_f'
 alias kcc='kubectl config current-context'
 # alias kdp='kubectl delete po'
 alias kgc='kubectl config get-contexts'
@@ -33,7 +32,7 @@ alias az-vs='az account set -s $AZ_SUB_VS && az account show -o table'
 alias az-bs='az account set -s TODO'
 alias azh='source /mnt/c/Users/adamr/.azhome.sh'
 alias azd='source /mnt/c/Users/adamr/.azdev.sh'
-alias azm='source ~/.azmgt.sh'
+alias azm='source /mnt/c/Users/adamr/.azmgt.sh'
 
 # Node
 alias npm-clean='rm -rf node_modules && rm package-lock.json && npm install'
