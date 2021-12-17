@@ -14,7 +14,7 @@ alias ksc='kubectl config use-context'
 # Misc
 # alias git_prune="git checkout master && git fetch --prune && git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -D"
 # clear deleted branches (git prune)
-alias cdb="git checkout master && git pull && git fetch --prune && git branch --merged master | egrep -v '(^\*|master)' | xargs git branch -D"
+alias cdb="git checkout master && git pull && git fetch --prune && git branch --merged master | egrep -v '(^\*|master|develop)' | xargs git branch -D 2>/dev/null || echo 'No branches found.'; git branch -a"
 alias wsl-ip="ip addr show eth0 | grep \"inet 1\" | awk '{print \$2}' | cut -d/ -f1"
 alias start-docker='sudo /etc/init.d/docker start'
 alias stop-docker='sudo /etc/init.d/docker stop'
