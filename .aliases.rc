@@ -27,6 +27,7 @@ alias ddu='du -sh * | sort -hr | head -20'
 # Azure CLI
 alias az-airs='az account set -s $AZ_SUB_AIRS && az account show -o table'
 alias az-vs='az account set -s $AZ_SUB_VS && az account show -o table'
+alias azas='az account show -o table'
 # alias az-nuke='az group delete --no-wait --yes -g'
 alias az-bs='az account set -s TODO'
 alias azh='source /mnt/c/Users/adamr/.azhome.sh'

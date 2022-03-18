@@ -145,3 +145,5 @@ if [ -f "$HOME/.go-my-posh.json" ]; then eval "$(oh-my-posh --init --shell bash 
 
 # Local overrides and post steps
 if [ -f "$HOME/.local.rc" ]; then source "$HOME/.local.rc"; fi
+
+eval "$(thefuck --alias)"
